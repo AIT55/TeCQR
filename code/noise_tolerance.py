@@ -9,9 +9,9 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 sbert = SentenceTransformer("/home/xxxxxxxx/TeCQR/prelm/all-MiniLM-L6-v2")
-item_dict_path = "/home/xxxxxxxx/TeCQR/data/lastfm/Graph_generate_data/item_dict(num)_new.json"
+item_dict_path = "/home/xxxxxxxx/TeCQR/data/lastfm/Graph_generate_data/question_tag.json"
 question_new_num_path = "/home/xxxxxxxx/TeCQR/data/lastfm/Graph_generate_data/question_new_num.txt"
-text_tokenized_path = "/home/xxxxxxxx/TeCQR/data/lastfm/Graph_generate_data/text_tokenized.txt"
+text_tokenized_path = "/home/xxxxxxxx/TeCQR/data/lastfm/Graph_generate_data/question_text.txt"
 tag_num_path = "/home/xxxxxxxx/TeCQR/tag_num.txt"
 with open(item_dict_path, 'r') as f:
     item_dict = json.load(f)
