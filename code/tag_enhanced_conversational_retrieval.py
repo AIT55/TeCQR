@@ -138,7 +138,7 @@ class upsearch_data:
         for key, value in data.items():
             self.item_test_ids[key] = value["can"]
         if set_name== 'test':
-            with open('%s/one_dict_test_new.json' % data_path, 'r') as f:
+            with open('%s/test.json' % data_path, 'r') as f:
                 f_data = json.load(f)
                 for uid in f_data.keys():
                     for pid in f_data[uid]["pos"]:
@@ -146,7 +146,7 @@ class upsearch_data:
                         self.review_text.append(quiry_words_dict_nopaading[str(pid)])
                         self.word_count += len(self.review_text[-1])
         else:
-            with open('%s/one_dict_train_new.json' % data_path, 'r') as f:
+            with open('%s/train.json' % data_path, 'r') as f:
                 f_data = json.load(f)
                 for uid in f_data.keys():
                     for pid in f_data[uid]:
@@ -179,7 +179,7 @@ class upsearch_data:
     def read_overall_aspect_values(self, data_path):
         self.av_word2id = dict()
         self.allaspects=list()
-        with open('%s/item_dict(num)_new.json' % data_path) as f:
+        with open('%s/question_tag.json' % data_path) as f:
             f_data = json.load(f)
             for iid in f_data.keys():
                 aspect_list = f_data[iid]["feature_index"]
@@ -224,7 +224,7 @@ class upsearch_data:
                 tmp_product_attribute[pid] = f_data[pid]["feature_index"]
         max_aid = 0
         max_vid = 0
-        with open('%s/one_dict_%s_new.json' % (data_path, set_name), 'r') as f:
+        with open('%s/%s.json' % (data_path, set_name), 'r') as f:
             f_data = json.load(f)
             for uid in f_data.keys():
                 uid = int(uid)
@@ -708,7 +708,7 @@ class upsearch_data:
                 old_id, new_id = line.strip().split('\t')
                 query_new_dict[int(old_id)] = int(new_id)
         query_text = {}
-        with open('/home/xxxxxxxx/TeCQR/data/lastfm/Graph_generate_data/text_tokenized.txt', 'r') as f:
+        with open('/home/xxxxxxxx/TeCQR/data/lastfm/Graph_generate_data/question_text.txt', 'r') as f:
             for line in f:
                 old_id, text, _ = line.strip().split('\t')
                 query_text[int(old_id)] = text
