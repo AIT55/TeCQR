@@ -10,3 +10,4 @@
 - **`tag_num.txt`**: Lists tags and their corresponding numeric IDs.  
 - **`train.json`**: Training dataset.  
 - **`test.json`**: Testing dataset.  
+The dataset has been fully released, and all core modules are open-sourced. The complete data processing code will be provided soon.
