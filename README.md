@@ -1,5 +1,6 @@
 # TeCQR
-The dataset has been fully released, and all core modules are open-sourced. The complete data processing code will be provided soon.
+All datasets have been fully released, and all core modules are publicly available.  
+The complete data processing code and its generated intermediate files will be released soon.
 ## This repository implements three core modules proposed in the paper:
 - **Noise Tolerance Modeling** (`noise_tolerance.py`)
 - **Tag-enhanced Conversational Retrieval** (`tag_enhanced_conversational_retrieval.py`)
