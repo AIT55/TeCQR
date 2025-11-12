@@ -76,7 +76,7 @@ class MyRec(nn.Module):
         self.neg_user = None
         data_path = './data/TeCQR/Graph_generate_data'
         num_query = {}
-        with open('%s/text_tokenized.txt' % data_path, 'r', encoding='UTF-8') as file:
+        with open('%s/question_tag.txt' % data_path, 'r', encoding='UTF-8') as file:
             for line in file:
                 parts = line.strip().split('\t')
                 if len(parts) == 3:
