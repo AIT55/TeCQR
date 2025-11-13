@@ -9,6 +9,6 @@ The complete data processing code and its generated intermediate files will be r
 - **`question_tag.json`**: Contains the tags associated with each question.  
 - **`question_text.txt`**: Stores the text content of questions.  
 - **`tag_num.txt`**: Lists tags and their corresponding numeric IDs.  
-- **`train.json`**: Training dataset. query and positives.
-- **`test.json`**: Testing dataset.  query, positives and candidates.
+- **`train.json`**: Training dataset. Query and positives.
+- **`test.json`**: Testing dataset.  Query, positives and candidates.
 
